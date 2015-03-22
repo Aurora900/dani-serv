@@ -13,3 +13,5 @@ suites:
     run_list:
       - 'recipe[dani-serv::default]'
     attributes:
+      dani-serv:
+        password: '$6$0Bncxpot$2xaFjK6Y3sp6e1o4rDTW5/dJkYqT9pV8xFk8NPnugRnDS5rzOzeFFm5c9pKLQlES2SIt3qGfOJ.0CNXYf6GJ01'
