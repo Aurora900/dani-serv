@@ -1,11 +1,11 @@
 server {
   listen 80;
-  server_name *;
+  server_name 127.0.0.1 localhost;
 
   access_log /var/log/nginx/hello_world.access.log;
 
   location / {
-    root <%= @webroot %>/hello_world;
+    root <%= @webroot %>;
     index index.html index.htm;
   }
 }

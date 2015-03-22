@@ -4,7 +4,7 @@ template '/etc/nginx/sites-available/hello_world' do
 	owner 'www-data'
 	group 'www-data'
 	mode 0760
-    source 'templates/hello_word.erb'
+    source 'hello_world.erb'
     variables ({
     	:webroot => node['dani-serv']['webroot']
     })
