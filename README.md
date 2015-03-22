@@ -1,6 +1,6 @@
 # dani-serv-cookbook
 
-A cookbook with only tests meant to help teach my girlfriend chef
+A cookbook which installs nginx with a default site which displays "Hello World" meant as a code sample
 
 ## Supported Platforms
 
