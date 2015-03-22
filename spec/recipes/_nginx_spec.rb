@@ -5,6 +5,9 @@ describe 'dani-serv::_nginx' do
     ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '14.04')
       .converge(described_recipe)
   end
+  before do
+    stub_command("which nginx").and_return('/usr/bin/nginx')
+  end
 
   it 'Includes the nginx recipe' do
     expect(chef_run).to include_recipe('nginx')
